@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infographic và Video YouTube</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #17324d;
+      background: #eef6ff;
+    }
+    .container { max-width: 1100px; margin: auto; padding: 32px 20px; }
+    header { text-align: center; margin-bottom: 28px; }
+    h1 { margin: 0 0 8px; color: #0b63ce; }
+    .subtitle { color: #557086; }
+    .layout { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(27, 85, 130, .12);
+    }
+    .card h2 { margin-top: 0; color: #134f8d; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .stat { text-align: center; padding: 18px 8px; border-radius: 12px; background: #e5f3ff; }
+    .stat strong { display: block; font-size: 28px; color: #f26b38; }
+    .stat span { font-size: 13px; }
+    .steps { margin: 24px 0 0; padding: 0; list-style: none; }
+    .steps li { display: flex; gap: 12px; align-items: center; margin: 14px 0; }
+    .number { display: grid; place-items: center; min-width: 34px; height: 34px; border-radius: 50%; color: white; background: #0b63ce; font-weight: bold; }
+    .video { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; }
+    .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    footer { text-align: center; margin-top: 24px; font-size: 13px; color: #6a8194; }
+    @media (max-width: 700px) { .layout { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Học tập hiệu quả trong thời đại số</h1>
+      <div class="subtitle">Infographic tóm tắt các bước xây dựng thói quen học tập tốt</div>
+    </header>
+
+    <section class="layout">
+      <article class="card">
+        <h2>Những con số nổi bật</h2>
+        <div class="stats">
+          <div class="stat"><strong>25′</strong><span>Mỗi phiên tập trung</span></div>
+          <div class="stat"><strong>3×</strong><span>Ôn lại mỗi tuần</span></div>
+          <div class="stat"><strong>7–8h</strong><span>Ngủ mỗi ngày</span></div>
+        </div>
+        <h2 style="margin-top:28px">4 bước đơn giản</h2>
+        <ol class="steps">
+          <li><span class="number">1</span><span>Đặt mục tiêu rõ ràng và có thể đo lường.</span></li>
+          <li><span class="number">2</span><span>Chia bài học thành các phần nhỏ.</span></li>
+          <li><span class="number">3</span><span>Loại bỏ thông báo và yếu tố gây xao nhãng.</span></li>
+          <li><span class="number">4</span><span>Tự kiểm tra và điều chỉnh phương pháp.</span></li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h2>Video hướng dẫn</h2>
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/IlU-zDU6aQ0" title="Video hướng dẫn học tập hiệu quả" allowfullscreen></iframe>
+        </div>
+        <p>Khám phá thêm các mẹo tập trung và quản lý thời gian qua video YouTube.</p>
+      </article>
+    </section>
+    <footer>
+      <p>Hãy bắt đầu bằng một mục tiêu nhỏ ngay hôm nay!</p>
+      <p><small>Nội dung và giao diện được hỗ trợ khởi tạo bởi AI (GitHub Copilot).</small></p>
+    </footer>
+  </main>
+</body>
+</html>
